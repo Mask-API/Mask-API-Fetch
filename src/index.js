@@ -45,7 +45,7 @@ const supportedSchemas = new Set(['data:', 'http:', 'https:']);
  * @param   {*} [options_] - Fetch options
  * @return  {Promise<import('./response').default>}
  */
-export default async function fetch(url, options_) {
+export default async function fetch(url, options_, onRequestFinish) {
 	return new Promise((resolve, reject) => {
 		// Build request object
 		const request = new Request(url, options_);
@@ -365,6 +365,8 @@ export default async function fetch(url, options_) {
 			response = new Response(body, responseOptions);
 			resolve(response);
 		});
+
+		request_.on('finish', onRequestFinish)
 
 		// eslint-disable-next-line promise/prefer-await-to-then
 		writeToStream(request_, request).catch(reject);
