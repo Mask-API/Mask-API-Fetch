@@ -1,7 +1,7 @@
 {
-  "name": "node-fetch",
+  "name": "mask-api-fetch",
   "version": "3.1.1",
-  "description": "A light-weight module that brings Fetch API to node.js",
+  "description": "A light-weight module that brings Fetch API to node.js customize for Mask API Platform",
   "main": "./src/index.js",
   "sideEffects": false,
   "type": "module",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-fetch/node-fetch.git"
+    "url": "https://github.com/Mask-API/Mask-API-Fetch.git"
   },
   "keywords": [
     "fetch",
@@ -33,16 +33,12 @@
     "xhr",
     "whatwg"
   ],
-  "author": "David Frank",
+  "author": "Mutasim Al-Mualimi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/node-fetch/node-fetch/issues"
+    "url": "https://github.com/Mask-API/Mask-API-Fetch/issues"
   },
-  "homepage": "https://github.com/node-fetch/node-fetch",
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/node-fetch"
-  },
+  "homepage": "https://github.com/Mask-API/Mask-API-Fetch",
   "devDependencies": {
     "abort-controller": "^3.0.0",
     "abortcontroller-polyfill": "^1.7.1",
