@@ -366,7 +366,9 @@ export default async function fetch(url, options_, onRequestFinish) {
 			resolve(response);
 		});
 
-		request_.on('finish', onRequestFinish)
+		if (onRequestFinish) {
+			request_.on('finish', onRequestFinish);
+		}
 
 		// eslint-disable-next-line promise/prefer-await-to-then
 		writeToStream(request_, request).catch(reject);

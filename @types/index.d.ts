@@ -216,4 +216,4 @@ export class AbortError extends Error {
 }
 
 export function isRedirect(code: number): boolean;
-export default function fetch(url: URL | RequestInfo, init?: RequestInit, onRequestFinish?: ()=>void): Promise<Response>;
+export default function fetch(url: URL | RequestInfo, init?: RequestInit, onRequestFinish?: () => void): Promise<Response>;
